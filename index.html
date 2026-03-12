@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thông tin xuất hóa đơn</title>
+
+<style>
+body{
+font-family:system-ui;
+max-width:600px;
+margin:auto;
+padding:30px;
+background:#f4f6f8;
+}
+
+.card{
+background:white;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.label{
+font-size:12px;
+color:#666;
+}
+
+.value{
+font-weight:600;
+}
+
+button{
+background:#2b7cff;
+border:none;
+color:white;
+padding:6px 10px;
+border-radius:6px;
+cursor:pointer;
+}
+</style>
+
+<script>
+function copy(text){
+navigator.clipboard.writeText(text);
+alert("Đã copy");
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Thông tin xuất hóa đơn</h2>
+
+<div class="card">
+<div>
+<div class="label">Tên đơn vị</div>
+<div class="value">HỘ KINH DOANH VERDENCY</div>
+</div>
+<button onclick="copy('HỘ KINH DOANH VERDENCY')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">MSHKD</div>
+<div class="value">079095029505</div>
+</div>
+<button onclick="copy('079095029505')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">Địa chỉ</div>
+<div class="value">115/91/18 Lê Văn Sỹ, Phường Phú Nhuận, TP.HCM</div>
+</div>
+<button onclick="copy('115/91/18 Lê Văn Sỹ, Phường Phú Nhuận, TP.HCM')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">Email</div>
+<div class="value">invoice@verdency.com</div>
+</div>
+<button onclick="copy('invoice@verdency.com')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">Người mua</div>
+<div class="value">Lê Tuấn Anh</div>
+</div>
+<button onclick="copy('Lê Tuấn Anh')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">CCCD</div>
+<div class="value">079095029505</div>
+</div>
+<button onclick="copy('079095029505')">Copy</button>
+</div>
+
+<div class="card">
+<div>
+<div class="label">SĐT</div>
+<div class="value">0904506600</div>
+</div>
+<button onclick="copy('0904506600')">Copy</button>
+</div>
+
+</body>
+</html>
